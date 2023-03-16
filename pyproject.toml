@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mre"
+version = "0.1.0"
+description = ""
+authors = ["Iain <25081046+Iain-S@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+azure-mgmt-consumption = "^10.0.0"
+azure-identity = "^1.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mre = "mre.main:main"
